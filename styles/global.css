@@ -13,12 +13,12 @@
   --light-blue: #e0ecff;
   --blue: #3485ff;
   --background: #fbfcff;
-  --overlay: #040911;
+  --overlay:  rgba(4, 9, 17, 0.8);
   --icons-details: #a5b0c1;
 
   --grey-dark: #4d5e77;
   --grey-blue: #a1b2cd;
-  --grey-medium: #d3d9e2;
+  --grey-medium: #eaecf2;
   --grey-light: #e5eaf1;
 
   --hover-blue: #5699ff;
@@ -83,16 +83,12 @@ button,
   display: flex;
   align-items: center;
   justify-content: center;
-
   font-family: "Poppins", sans-serif;
   font-weight: 500;
   line-height: 0;
-
   background-color: var(--blue);
   color: var(--white);
-
   cursor: pointer;
-
   transition: filter 0.2s;
 }
 
@@ -112,4 +108,16 @@ button.outlined,
   background-color: var(--white);
   color: var(--blue);
   border: 0.2rem solid var(--blue);
+}
+
+button.red,
+.button.red {
+  background-color: var(--red);
+  color: var(--white)
+}
+
+button.grey,
+.button.grey {
+  background-color: var(--grey-light);
+  color: var(--grey-dark)
 }

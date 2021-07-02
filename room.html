@@ -9,6 +9,7 @@
   <!-- Styles -->
   <link rel="stylesheet" href="./styles/global.css">
   <link rel="stylesheet" href="./styles/room.css">
+  <link rel="stylesheet" href="./styles/modal.css">
 
   <!-- Fonts-->
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -57,6 +58,7 @@
       <section id="questions">
         <h2 class="sr-only">Perguntas da comunidade</h2>
         <div class="questions">
+
           <div class="question-wrapper">
             <div class="question-content">
               <div class="user">
@@ -77,11 +79,90 @@
               </a>
             </div>
           </div>
+
+          <div class="question-wrapper read">
+            <div class="question-content">
+              <div class="user">
+                <img src="assets/avatar.svg" alt="Avatar">
+              </div>
+              <div class="question">
+                <p>O que é JS?</p>
+              </div>
+            </div>
+            <div class="actions">
+              <a href="#">
+                <img class="delete" src="assets/trash.svg" alt="Excluir">
+                Excluir
+              </a>
+            </div>
+          </div>
+
+          <div class="question-wrapper">
+            <div class="question-content">
+              <div class="user">
+                <img src="assets/avatar.svg" alt="Avatar">
+              </div>
+              <div class="question">
+                <p>O que é TS?</p>
+              </div>
+            </div>
+            <div class="actions">
+              <a class="check" href="#">
+                <img src="assets/check.svg" alt="Marcar como lida">
+                Marcar como lida
+              </a>
+              <a href="#">
+                <img class="delete" src="assets/trash.svg" alt="Excluir">
+                Excluir
+              </a>
+            </div>
+          </div>
+
+          <div class="question-wrapper">
+            <div class="question-content">
+              <div class="user">
+                <img src="assets/avatar.svg" alt="Avatar">
+              </div>
+              <div class="question">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga, harum?. Lorem ipsum dolor sit amet
+                  consectetur, adipisicing elit. Sit debitis, provident cumque nisi vel voluptatibus! Lorem ipsum dolor
+                  sit amet consectetur, adipisicing elit. Quod velit hic dicta itaque architecto sapiente praesentium
+                  deserunt voluptas, exercitationem quibusdam?</p>
+              </div>
+            </div>
+            <div class="actions">
+              <a class="check" href="#">
+                <img src="assets/check.svg" alt="Marcar como lida">
+                Marcar como lida
+              </a>
+              <a href="#">
+                <img class="delete" src="assets/trash.svg" alt="Excluir">
+                Excluir
+              </a>
+            </div>
+          </div>
+
         </div>
       </section>
-
     </main>
   </div>
+
+  <!--MODAL-->
+  <div class="modal-wrapper">
+    <div class="modal">
+      <h2>Excluir pergunta</h2>
+      <p>Tem certeza que você deseja excluir essa pergunta?</p>
+      <form action="">
+        <label for="password" class="sr-only">Digite sua senha de administrador</label>
+        <input type="password" name="password" id="password" placeholder="Digite sua senha">
+        <div class="buttons">
+          <div class="button grey">Cancelar</div>
+          <button class="red">Sim, excluir</button>
+        </div>
+      </form>
+    </div>
+  </div>
+
 </body>
 
 </html>
